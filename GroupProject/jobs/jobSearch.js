@@ -37,7 +37,7 @@ const displayItems = (items) => {
         
         // Redirect to job details on click
         jList.addEventListener('click', () => {
-            window.location.href = `jobs-details.html?id=${index}`;
+            window.location.href = `jobs_details.html?id=${index}`;
         });
     });
 };
@@ -91,7 +91,7 @@ const displayItems = (items) => {
         
         rootElement.appendChild(jList);
         jList.addEventListener('click', () => {
-            window.location.href = `jobs-details.html?id=${index}`;
+            window.location.href = `jobs_details.html?id=${index}`;
         });
     });
 };

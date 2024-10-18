@@ -31,6 +31,8 @@ h3 {
 
 /* Join Button */
 #w-btn {
+  cursor: pointer;
+
   margin-left: 40px;
   margin-right: 10px;
   background-color: #2A438C;
