@@ -63,7 +63,7 @@ h3 {
 }
 
 
-/* navbar */
+/* header - navbar */
 header {
 background-color: #F2F2F2;
 position: fixed;
@@ -73,6 +73,7 @@ width: 100%;
 z-index: 999;
 }
 
+/* navbar */
 #navbar {
   display: flex;
   justify-content: space-between;
