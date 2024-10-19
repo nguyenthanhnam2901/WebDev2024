@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header  Section-->
+    <header>
+        <div id="navbar" class="obj-width">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs/job.html">Browse Jobs</a></li>
+                <li><a href="jobs/add_job.html">Add Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="join.html">
+                    <button id="w-btn">Join</button>
+                </a>
+                
+            </ul>
+            <img src="images/menu.svg" alt="" id="bar">
+        </div>
+    </header>
+
+    <!-- Login/Registration Forms -->
+    <section class="form-section obj-width">
+        <h1>Job Portal</h1>
+        
+        <!-- Login Form -->
+        <div class="form-container" id="login-form">
+            <h4>Login</h4>
+            <form id="login-form" method="POST" onsubmit="handleLogin(event)">
+                <label for="username">Username/Email:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <button onclick="toggleForms('register')">Register</button></p>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form-container" id="register-form" style="display: none;">
+            <h4>Register</h4>
+            <form id="register-form" method="POST" onsubmit="handleRegistration(event)">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="new-username">Username:</label>
+                    <input type="text" id="new-username" name="new-username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="new-password">Password:</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone-number" name="phone-number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="new-email">Email:</label>
+                    <input type="email" id="new-email" name="new-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Birth_of_date">Date of Birth:</label>
+                    <input type="date" id="Birth_of_date" name="Birth_of_date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="male" checked> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <button onclick="toggleForms('login')">Login</button></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="obj-width">
+            <div class="top">
+                <div>
+                    <img class="logo" src="images/logo_full.png" alt="Logo">
+                    <p>Search your desired jobs</p>
+                </div>
+                <div class="top">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="images/facebook-square.svg" alt="Facebook" class="icon">
+                    </a>
+                    <a href="https://www.behance.net/" target="_blank">
+                        <img src="images/behance.svg" alt="Behance" class="icon">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="images/instagram.svg" alt="Instagram" class="icon">
+                    </a>
+                    <a href="https://x.com/" target="_blank">
+                        <img src="images/twitter.svg" alt="Twitter" class="icon">
+                    </a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div>
+                    <h3>Project</h3>
+                    <a href="#">Changelog</a>
+                    <a href="#">Status</a>
+                    <a href="#">License</a>
+                </div>
+                <div>
+                    <h3>Community</h3>
+                    <a href="https://github.com/" target="_blank">Github</a>
+                    <a href="#">Issues</a>
+                    <a href="#">Projects</a>
+                    <a href="https://x.com/" target="_blank">Twitter</a>
+                </div>
+                <div>
+                    <h3>Help</h3>
+                    <a href="#">Support</a>
+                    <a href="#">Troubleshooting</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div>
+                    <h3>Others</h3>
+                    <a href="#">Terms of Services</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">License</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="toggle.js"></script>
+    <script src="join.js"></script>
+</body>
+
+</html>

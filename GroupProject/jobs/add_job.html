@@ -19,7 +19,9 @@
                 <li><a href="job.html">Browse Jobs</a></li>
                 <li><a href="add_job.html">Add Jobs</a></li>
                 <li><a href="../contact.html">Contact</a></li>
-                <button id="w-btn">Join</button>
+                <a href="../join.html">
+                    <button id="w-btn">Join</button>
+                </a>
             </ul>
             <img src="../images/menu.svg" alt="" id="bar">
         </div>
@@ -29,66 +31,65 @@
     <section class="add-job sec-space obj-width">
         <h1>Add Job</h1>
         <h2>Post your job details below</h2>
+    
+            <form action="submit_job.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="job-image"><h3>Job Image</h3></label>
+                    <input type="file" id="job-image" name="job-image" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="job-title"><h3>Job Title</h3></label>
+                    <input type="text" id="job-title" name="job-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="company-name"><h3>Company Name</h3></label>
+                    <input type="text" id="company-name" name="company-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="location"><h3>Location</h3></label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="employment-status"><h3>Employment Status</h3></label>
+                    <select id="employment-status" name="employment-status" required>
+                        <option value="full-time">Full Time</option>
+                        <option value="part-time">Part Time</option>
+                        <option value="freelance">Freelance</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="salary"><h3>Salary</h3></label>
+                    <input type="text" id="salary" name="salary" placeholder="$1000 - $2000" required>
+                </div>
+                <div class="form-group">
+                    <label for="vacancy"><h3>Vacancy</h3></label>
+                    <input type="number" id="vacancy" name="vacancy" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="hours"><h3>Hours per Week</h3></label>
+                    <input type="number" id="hours" name="hours" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="job-description"><h3>Job Description</h3></label>
+                    <textarea id="job-description" name="job-description" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="workplace"><h3>Workplace</h3></label>
+                    <input type="text" id="workplace" name="workplace" required>
+                </div>
+                <div class="form-group">
+                    <label for="educational-requirements"><h3>Educational Requirements</h3></label>
+                    <input type="text" id="educational-requirements" name="educational-requirements" required>
+                </div>
+                <div class="form-group">
+                    <label for="experience-requirements"><h3>Experience Requirements</h3></label>
+                    <input type="text" id="experience-requirements" name="experience-requirements" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit-btn">Post Job</button>
+                </div>
 
-        <div class="add_job_table" id="root"> </div>
-        
-        <!-- <form action="submit_job.php" method="POST" enctype="multipart/form-data"> -->
-            <div class="form-group">
-                <label for="job-image"><h3>Job Image</h3></label>
-                <input type="file" id="job-image" name="job-image" accept="image/*" required>
-            </div>
-            <div class="form-group">
-                <label for="job-title"><h3>Job Title</h3></label>
-                <input type="text" id="job-title" name="job-title" required>
-            </div>
-            <div class="form-group">
-                <label for="company-name"><h3>Company Name</h3></label>
-                <input type="text" id="company-name" name="company-name" required>
-            </div>
-            <div class="form-group">
-                <label for="location"><h3>Location</h3></label>
-                <input type="text" id="location" name="location" required>
-            </div>
-            <div class="form-group">
-                <label for="employment-status"><h3>Employment Status</h3></label>
-                <select id="employment-status" name="employment-status" required>
-                    <option value="full-time">Full Time</option>
-                    <option value="part-time">Part Time</option>
-                    <option value="freelance">Freelance</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="salary"><h3>Salary</h3></label>
-                <input type="text" id="salary" name="salary" placeholder="$1000 - $2000" required>
-            </div>
-            <div class="form-group">
-                <label for="vacancy"><h3>Vacancy</h3></label>
-                <input type="number" id="vacancy" name="vacancy" min="1" required>
-            </div>
-            <div class="form-group">
-                <label for="hours"><h3>Hours per Week</h3></label>
-                <input type="number" id="hours" name="hours" min="1" required>
-            </div>
-            <div class="form-group">
-                <label for="job-description"><h3>Job Description</h3></label>
-                <textarea id="job-description" name="job-description" rows="5" required></textarea>
-            </div>
-            <div class="form-group">
-                <label for="workplace"><h3>Workplace</h3></label>
-                <input type="text" id="workplace" name="workplace" required>
-            </div>
-            <div class="form-group">
-                <label for="educational-requirements"><h3>Educational Requirements</h3></label>
-                <input type="text" id="educational-requirements" name="educational-requirements" required>
-            </div>
-            <div class="form-group">
-                <label for="experience-requirements"><h3>Experience Requirements</h3></label>
-                <input type="text" id="experience-requirements" name="experience-requirements" required>
-            </div>
-            <div class="form-group">
-                <button type="submit" id="submit-btn">Post Job</button>
-            </div>
-        <!-- </form> -->
+        </form>
     </section>
 
 
