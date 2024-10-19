@@ -28,10 +28,12 @@
     </header>
 
     <!-- Add Job Section -->
-    <section class="add-job sec-space obj-width">
+    <section class="add-job sec-space obj-width extra-space">
         <h1>Add Job</h1>
         <h2>Post your job details below</h2>
     
+        <div class="form-container" id="add_job">
+
             <form action="submit_job.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="job-image"><h3>Job Image</h3></label>
@@ -89,7 +91,10 @@
                     <button type="submit" id="submit-btn">Post Job</button>
                 </div>
 
-        </form>
+            </form>
+
+        </div>
+    
     </section>
 
 
