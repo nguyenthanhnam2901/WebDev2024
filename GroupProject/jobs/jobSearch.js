@@ -99,3 +99,4 @@ const displayItems = (items) => {
 displayItems(categories);
 
 */
+
