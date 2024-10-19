@@ -348,7 +348,7 @@ footer {
 }
 
 
-/* Browser jobs - job.html */
+/* Browser jobs - job.html - listed job */
 .jobs form{
   margin-top: 3rem;
   width: 100%;
@@ -550,5 +550,5 @@ font-weight: bold;
       padding: 0rem;
       border-radius: 10px;
     }
-
 }
+
